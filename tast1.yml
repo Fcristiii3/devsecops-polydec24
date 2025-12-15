@@ -1,6 +1,9 @@
 name: task1
 on: [push]
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo ${{hello_world.txt}}
+  print-txt:
+    runs-on: ubuntu-latest
+    steps:
+      name: printing txt file
+      uses: actions/checkout@v3
+      run: echo ${{hello_world.txt}}
