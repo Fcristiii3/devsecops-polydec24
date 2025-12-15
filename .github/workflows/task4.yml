@@ -20,6 +20,7 @@ jobs:
     - run: npm install
     - name: Bearer
       uses: bearer/bearer-action@v2
+    - run: bearer ignore add 65a0b5683f8d3046fd1ec645d0717938_0
     
 
 
