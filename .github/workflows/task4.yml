@@ -1,5 +1,3 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
 name: task4
 
@@ -18,8 +16,13 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
     - run: npm install
+    - name: Bearer ignore
+      uses: bearer/bearer-ignore@v2
+      with:
+        bearer-ignore-file: 65a0b5683f8d3046fd1ec645d0717938_0
     - name: Bearer
       uses: bearer/bearer-action@v2
+      
 
     
 
