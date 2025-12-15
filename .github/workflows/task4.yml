@@ -17,9 +17,9 @@ jobs:
       uses: actions/setup-node@v4
     - run: npm install
     - name: Bearer ignore
-      uses: bearer/bearer-ignore@v2
+      uses: bearer/actions/ignore@main
       with:
-        bearer-ignore-file: 65a0b5683f8d3046fd1ec645d0717938_0
+        ids: 65a0b5683f8d3046fd1ec645d0717938_0
     - name: Bearer
       uses: bearer/bearer-action@v2
       
