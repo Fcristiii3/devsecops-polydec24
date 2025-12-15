@@ -1,0 +1,6 @@
+name: task1
+on: [push]
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo ${{hello_world.txt}}
